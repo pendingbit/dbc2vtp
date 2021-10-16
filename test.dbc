@@ -1,0 +1,581 @@
+VERSION "HSCAN1"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Shifter_Control_Unit Gateway Diagnostics Tester HCU Transmission_Control_Module Engine_Control_Module vector__xxx
+
+
+BO_ 1794 DIAG_DTCInfo_SCU: 7 Shifter_Control_Unit
+ SG_ DTCInfomationSCUHSC1 : 7|56@0+ (1,0) [0|0] ""  Gateway
+
+BO_ 1913 DIAG_PhysResp_SCU: 8 Shifter_Control_Unit
+ SG_ DiagnosticRespSCU : 7|64@0+ (1,0) [0|0] ""  Diagnostics
+
+BO_ 1638 GBA_DEV_Request: 8 Shifter_Control_Unit
+ SG_ SCUTxCCPHSC1 : 63|8@0+ (1,0) [0|0] ""  Tester
+
+BO_ 157 SCU_HSC1_FrP00: 8 Shifter_Control_Unit
+ SG_ SCUDrvngMdSwStsHSC1 : 33|2@0+ (1,0) [0|3] ""  vector__xxx
+ SG_ SCUDrvrIntrvnAHSC1 : 2|1@0+ (1,0) [0|1] ""  Gateway
+ SG_ SCUExtdShifterFlrHSC1 : 59|4@0+ (1,0) [0|15] ""  vector__xxx
+ SG_ SCUFltLvlWrnngHSC1 : 1|2@0+ (1,0) [0|3] ""  Gateway
+ SG_ SCUNRCDAlvRCHSC1 : 7|4@0+ (1,0) [0|15] "count value"  Gateway
+ SG_ SCUNRCDAvlblHSC1 : 3|1@0+ (1,0) [0|1] ""  Gateway
+ SG_ SCUParkActrStsHSC1 : 13|2@0+ (1,0) [0|3] ""  HCU
+ SG_ SCUParkLckReqHSC1 : 45|2@0+ (1,0) [0|3] ""  Gateway,Tester
+ SG_ SCUParkLckReqPVHSC1 : 43|4@0+ (1,0) [0|15] ""  Gateway,Tester
+ SG_ SCUParkLckReqVHSC1 : 46|1@0+ (1,0) [0|1] ""  Gateway,Tester
+ SG_ SCURgtnLvlSwStsHSC1 : 35|2@0+ (1,0) [0|3] ""  vector__xxx
+ SG_ SCUShifterFlrHSC1 : 19|3@0+ (1,0) [0|7] ""  vector__xxx
+ SG_ SCUShifterLvrPosHSC1 : 23|4@0+ (1,0) [0|15] ""  Gateway,HCU,Transmission_Control_Module
+ SG_ SCUShifterOpngRmndrHSC1 : 63|4@0+ (1,0) [0|15] ""  Gateway
+ SG_ SCUShifterParkActrPosHSC1 : 55|3@0+ (1,0) [0|7] ""  HCU
+ SG_ SCUShifterPosInvsnHSC1 : 31|4@0+ (1,0) [0|15] ""  HCU,Transmission_Control_Module
+ SG_ SCUShifterPosRCHSC1 : 11|4@0+ (1,0) [0|15] ""  Gateway,HCU,Transmission_Control_Module
+ SG_ SCUShifterSpvsUnitFlrHSC1 : 51|3@0+ (1,0) [0|7] ""  HCU
+ SG_ SCUSOCMdSwStsHSC1 : 15|2@0+ (1,0) [0|3] ""  vector__xxx
+
+BO_ 2015 DIAG_FuncReq_HSC1: 8 Diagnostics
+ SG_ DiagnosticFuncAddrReq_h1 : 7|64@0+ (1,0) [0|0] ""  Shifter_Control_Unit
+
+BO_ 1905 DIAG_PhysReq_SCU: 8 Diagnostics
+ SG_ DiagnosticReqSCU : 7|64@0+ (1,0) [0|0] ""  Shifter_Control_Unit
+
+BO_ 201 ECM_HSC1_FrP00: 8 Engine_Control_Module
+ SG_ En12VoltStrMotCmddOn_h1HSC1 : 53|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ EnRunA_h1HSC1 : 7|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ PtBrkPdlDscrtInptStsV_h1HSC1 : 41|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ PtBrkPdlDscrtInptSts_h1HSC1 : 40|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+
+BO_ 404 ECM_HSC1_FrP04: 8 Engine_Control_Module
+ SG_ TrShftLvrPosV_h1HSC1 : 28|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ TrShftLvrPos_h1HSC1 : 27|4@0+ (1,0) [0|15] ""  Shifter_Control_Unit
+
+BO_ 479 ECM_HSC1_FrP07: 2 Engine_Control_Module
+ SG_ EnASSSta_h1HSC1 : 1|2@0+ (1,0) [0|3] ""  Shifter_Control_Unit
+
+BO_ 1130 GW_HSC1_BCM_FrP04: 8 Gateway
+ SG_ DrvrDoorOpenStsHSCHSC1 : 1|2@0+ (1,0) [0|3] ""  Shifter_Control_Unit
+ SG_ VehSideLghtStsHSC1 : 57|2@0+ (1,0) [0|3] ""  Shifter_Control_Unit
+
+BO_ 498 GW_HSC1_BCM_FrP07: 2 Gateway
+ SG_ SysBPMHSC1 : 5|2@0+ (1,0) [0|3] ""  Shifter_Control_Unit
+ SG_ SysBPMEnbdHSC1 : 6|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+
+BO_ 361 GW_HSC1_FrP00: 6 Gateway
+ SG_ BCMAvlbly_h1HSC1 : 31|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ FICMAvlbly_h1HSC1 : 25|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ IPCAvlbly_h1HSC1 : 30|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ SCSAvlbly_h1HSC1 : 4|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ SDMAvlbly_h1HSC1 : 5|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+
+BO_ 497 GW_HSC1_FrP01: 8 Gateway
+ SG_ BPMMstrAvlbly_h1HSC1 : 35|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ PwrMdMstrAccryA_h1HSC1 : 2|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ PwrMdMstrRunCrkA_h1HSC1 : 3|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ SysOpnlMd_h1HSC1 : 6|3@0+ (1,0) [0|7] ""  Shifter_Control_Unit
+ SG_ SysPwrMdV_h1HSC1 : 33|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ SysPwrMd_h1HSC1 : 1|2@0+ (1,0) [0|3] ""  Shifter_Control_Unit
+ SG_ SysVolMdV_h1HSC1 : 7|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ SysVolMd_h1HSC1 : 58|2@0+ (1,0) [0|3] ""  Shifter_Control_Unit
+ SG_ SysVolV_h1HSC1 : 32|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ SysVol_h1HSC1 : 47|8@0+ (0.1,3) [3|28.5] "V"  Shifter_Control_Unit
+
+BO_ 241 GW_HSC1_FrP02: 8 Gateway
+ SG_ BrkPdlPosV_h1HSC1 : 26|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ ScurtKeyInvdHSC1 : 25|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+
+BO_ 481 GW_HSC1_FrP04: 7 Gateway
+ SG_ NRCDSCUReqAlvRC_h1HSC1 : 31|4@0+ (1,0) [0|15] "count value"  Shifter_Control_Unit
+ SG_ NRCDShifterPosReqd_h1HSC1 : 27|4@0+ (1,0) [0|15] ""  Shifter_Control_Unit
+
+BO_ 1344 GW_HSC1_FrP07: 8 Gateway
+ SG_ VehOdoV_h1HSC1 : 31|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ VehOdo_h1HSC1 : 7|24@0+ (1,0) [0|16777200] ""  Shifter_Control_Unit
+
+BO_ 795 GW_HSC1_FrP09: 8 Gateway
+ SG_ VehDrvngMd_h1HSC1 : 29|3@0+ (1,0) [0|7] ""  Shifter_Control_Unit
+
+BO_ 425 GW_HSC1_FrP13: 8 Gateway
+ SG_ NRCDSts_h1HSC1 : 39|2@0+ (1,0) [0|3] ""  Shifter_Control_Unit
+
+BO_ 1699 GW_HSC1_FrS00: 8 Gateway
+ SG_ NRCDMstrChlg_h1HSC1 : 7|64@0+ (1,0) [0|0] ""  Shifter_Control_Unit
+
+BO_ 1345 GW_HSC1_IPK_FrP06: 8 Gateway
+ SG_ CalendarDayHSC1 : 20|5@0+ (1,0) [0|31] "days"  Shifter_Control_Unit
+ SG_ CalendarMonthHSC1 : 11|4@0+ (1,0) [0|15] ""  Shifter_Control_Unit
+ SG_ CalendarYearHSC1 : 7|8@0+ (1,2000) [2000|2255] "year"  Shifter_Control_Unit
+ SG_ HourOfDayHSC1 : 28|5@0+ (1,0) [0|23] "E=N*1"  Shifter_Control_Unit
+ SG_ MinuteOfHourHSC1 : 37|6@0+ (1,0) [0|59] ""  Shifter_Control_Unit
+ SG_ SecsOfMinuteHSC1 : 45|6@0+ (1,0) [0|59] ""  Shifter_Control_Unit
+ SG_ TimeDspFmtHSC1 : 46|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+
+BO_ 249 TCM_HSC1_FrP00: 8 Transmission_Control_Module
+ SG_ TrOtptShaftAngulVelHSC1 : 31|16@0+ (0.25,0) [0|16383.8] "rpm"  Shifter_Control_Unit
+ SG_ TrOtptShaftAngulVelVHSC1 : 23|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+
+BO_ 501 TCM_HSC1_FrP02: 8 Transmission_Control_Module
+ SG_ TrEPBAppReqHSC1 : 47|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ TrEPBAppReqPVHSC1 : 59|4@0+ (1,0) [0|15] ""  Shifter_Control_Unit
+ SG_ TrEstdGearPVHSC1 : 15|4@0+ (1,0) [0|15] ""  Shifter_Control_Unit
+ SG_ TrEstdGearV_TCMHSC1 : 4|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ TrEstdGear_TCMHSC1 : 3|4@0+ (1,0) [0|15] ""  Shifter_Control_Unit
+ SG_ TrPrkPosHSC1 : 23|2@0+ (1,0) [0|3] ""  Shifter_Control_Unit
+ SG_ TrPrkPosPVHSC1 : 54|4@0+ (1,0) [0|15] ""  Shifter_Control_Unit
+ SG_ TrPrkSysFHSC1 : 45|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ TrShftLvrPosPVHSC1 : 39|4@0+ (1,0) [0|15] ""  Shifter_Control_Unit
+ SG_ TrShftLvrPosV_TCMHSC1 : 28|1@0+ (1,0) [0|1] ""  Shifter_Control_Unit
+ SG_ TrShftLvrPos_TCMHSC1 : 27|4@0+ (1,0) [0|15] ""  Shifter_Control_Unit
+ SG_ TrShftPosAlvRCHSC1 : 35|4@0+ (1,0) [0|15] "count value"  Shifter_Control_Unit
+
+
+
+CM_ SG_ 1794 DTCInfomationSCUHSC1 "DTC Infomation of SCU
+
+The length of DTC information signal is 7 bytes.
+Byte 0 is MSB (most significant byte), and Byte 6 is LSB (least significant byte).
+For each byte, Bit 7 is msb (most significant bit), and Bit 0 is lsb (least significant bit).
+
+Byte 0:
+Bit (7-4): DTC Serious Level
+Bit (3-0): Reserved
+
+Byte 1:
+Bit (7-0): Reserved
+
+Byte 2:
+Bit (7-0): DTCHighByte
+
+Byte 3:
+Bit (7-0): DTCLowByte
+
+Byte 4:
+Bit (7-0): DTCFailureTypeByte
+
+Byte 5:
+Bit 7: warningIndicatorRequested
+Bit 6: testNotCompletedThisOperationCycle
+Bit 5: testFailedSinceLastClear
+Bit 4: testNotCompletedSinceLastClear
+Bit 3: confirmedDTC
+Bit 2: pendingDTC
+Bit 1: testFailedThisOperationCycle
+Bit 0: testFailed
+
+Byte 6:
+Bit (7-0): DTC Type
+
+For more detail, please refer to SMTC 2 800 004.
+";
+CM_ SG_ 1913 DiagnosticRespSCU "Diagnostic response from SCU";
+CM_ SG_ 1638 SCUTxCCPHSC1 "SCU Vehicle debugging in Devlopment stage only.";
+CM_ SG_ 157 SCUDrvngMdSwStsHSC1 "Shifter control unit drive mode Switch status
+";
+CM_ SG_ 157 SCUDrvrIntrvnAHSC1 "Shifter Control Unit Driver Intervention Active
+";
+CM_ SG_ 157 SCUExtdShifterFlrHSC1 "Shifter Control Unit Extended Shifter Failure";
+CM_ SG_ 157 SCUFltLvlWrnngHSC1 "Shifter Control Unit Fault Level Warning";
+CM_ SG_ 157 SCUNRCDAlvRCHSC1 "Shifter Control Unit Near Range Control Drive Alive Rolling Count
+";
+CM_ SG_ 157 SCUNRCDAvlblHSC1 "Shifter Control Unit Near Range Control Drive Available
+
+
+";
+CM_ SG_ 157 SCUParkActrStsHSC1 "Shifter control unit Park actuator status
+";
+CM_ SG_ 157 SCURgtnLvlSwStsHSC1 "Shifter control unit regen lever Switch status
+";
+CM_ SG_ 157 SCUShifterFlrHSC1 "Shifter Control Unit Shifter Failure";
+CM_ SG_ 157 SCUShifterLvrPosHSC1 "Shifter Control Unit Shifter Lever Position
+";
+CM_ SG_ 157 SCUShifterOpngRmndrHSC1 "Shifter Control Unit Shifter Operating Reminder";
+CM_ SG_ 157 SCUShifterPosInvsnHSC1 "Shifter Control Unit Shifter Position Inversion
+Checksum for Shifter position signal sending by SCU";
+CM_ SG_ 157 SCUShifterPosRCHSC1 "Shifter Control Unit Shifter Position Rolling Count";
+CM_ SG_ 157 SCUSOCMdSwStsHSC1 "Shifter control unit SOC mode Switch status
+
+";
+CM_ SG_ 2015 DiagnosticFuncAddrReq_h1 "Diagnostic functional address request";
+CM_ SG_ 1905 DiagnosticReqSCU "Diagnostic request to SCU";
+CM_ SG_ 201 En12VoltStrMotCmddOn_h1HSC1 "Engine 12 Volt Starter Motor Commanded On";
+CM_ SG_ 201 EnRunA_h1HSC1 "Engine Run Active";
+CM_ SG_ 201 PtBrkPdlDscrtInptStsV_h1HSC1 "Powertrain Brake Pedal Discrete Input Status Validity";
+CM_ SG_ 201 PtBrkPdlDscrtInptSts_h1HSC1 "Powertrain Brake Pedal Discrete Input Status";
+CM_ SG_ 404 TrShftLvrPosV_h1HSC1 "Transmission Shift Lever Position Validity";
+CM_ SG_ 404 TrShftLvrPos_h1HSC1 "Transmission Shift Lever Position
+For DCT/AT transmission :
+$0=Between Ranges
+$1=Park Range
+$2=Reverse Range
+$3=Neutral Range
+$4=Forward Range A
+$5=Forward Range B
+$6=Forward Range C
+$7=Forward Range D
+$8=Forward Range E
+$9=Forward Range F
+$A=Forward Range G
+$B=Forward Range H
+$F=Lever Position Unknown
+
+For Manual Transmission: only below status are used
+$2=Reverse Range
+$3=Neutral Range (Validity on MT vehicles is only protected for Neutral range)
+$F=Lever Position Unknown";
+CM_ SG_ 479 EnASSSta_h1HSC1 "Engine Auto Stop Start State";
+CM_ SG_ 1130 DrvrDoorOpenStsHSCHSC1 "Driver Door Open Status";
+CM_ SG_ 1130 VehSideLghtStsHSC1 "Vehicle Side Light Status";
+CM_ SG_ 498 SysBPMHSC1 "System Backup Power Mode";
+CM_ SG_ 498 SysBPMEnbdHSC1 "System Backup Power Mode Enabled";
+CM_ SG_ 361 BCMAvlbly_h1HSC1 "BCM Available
+
+Detect if specific ECU is available according to node missing strategy by gateway ECU.
+";
+CM_ SG_ 361 FICMAvlbly_h1HSC1 "FICM Available
+
+Detect if specific ECU is available according to node missing strategy by gateway ECU.
+
+";
+CM_ SG_ 361 IPCAvlbly_h1HSC1 "IPC Available
+
+Detect if specific ECU is available according to node missing strategy by gateway ECU.
+
+";
+CM_ SG_ 361 SCSAvlbly_h1HSC1 "SCS Available
+
+Detect if specific ECU is available according to node missing strategy by gateway ECU.
+
+";
+CM_ SG_ 361 SDMAvlbly_h1HSC1 "SDM Available
+
+Detect if specific ECU is available according to node missing strategy by gateway ECU.
+
+";
+CM_ SG_ 497 BPMMstrAvlbly_h1HSC1 "Backup Power Mode Master Availability";
+CM_ SG_ 497 PwrMdMstrAccryA_h1HSC1 "Power Mode Master Accessory Active";
+CM_ SG_ 497 PwrMdMstrRunCrkA_h1HSC1 "Power Mode Master Run Crank Active";
+CM_ SG_ 497 SysOpnlMd_h1HSC1 "System Operational Mode";
+CM_ SG_ 497 SysPwrMdV_h1HSC1 "System Power Mode Validity ";
+CM_ SG_ 497 SysPwrMd_h1HSC1 "System Power Mode";
+CM_ SG_ 497 SysVolMdV_h1HSC1 "System Voltage Mode Validity ";
+CM_ SG_ 497 SysVolMd_h1HSC1 "System Voltage Mode ";
+CM_ SG_ 497 SysVolV_h1HSC1 "Battery Voltage Validity";
+CM_ SG_ 497 SysVol_h1HSC1 "Battery Voltage";
+CM_ SG_ 241 BrkPdlPosV_h1HSC1 "Brake Pedal Position Validity";
+CM_ SG_ 241 ScurtKeyInvdHSC1 "Security Key Invalid";
+CM_ SG_ 481 NRCDSCUReqAlvRC_h1HSC1 "Near Range Control Drive Shifter Control Unit Request Alive Rolling Count
+";
+CM_ SG_ 481 NRCDShifterPosReqd_h1HSC1 "Near Range Control Drive Shifter Position Requested
+";
+CM_ SG_ 1344 VehOdoV_h1HSC1 "Vehicle Odometer Validity";
+CM_ SG_ 1344 VehOdo_h1HSC1 "Vehicle Odometer";
+CM_ SG_ 795 VehDrvngMd_h1HSC1 "Vehicle Driving Mode
+";
+CM_ SG_ 425 NRCDSts_h1HSC1 "Near Range Control Drive Status
+";
+CM_ SG_ 1699 NRCDMstrChlg_h1HSC1 "Near Range Control Drive Master Challenge
+";
+CM_ SG_ 1345 CalendarDayHSC1 "current day info.";
+CM_ SG_ 1345 CalendarMonthHSC1 "current month info.";
+CM_ SG_ 1345 CalendarYearHSC1 "current year info";
+CM_ SG_ 1345 HourOfDayHSC1 "Hour Of Day.
+current Hour info.";
+CM_ SG_ 1345 MinuteOfHourHSC1 "Minute Of Hour.
+current Minute info.";
+CM_ SG_ 1345 SecsOfMinuteHSC1 "Seconds Of Minute
+current Second info.";
+CM_ SG_ 1345 TimeDspFmtHSC1 "Time Display Format
+current Time format.";
+CM_ SG_ 249 TrOtptShaftAngulVelHSC1 "Transmission Output Shaft Angular Velocity";
+CM_ SG_ 249 TrOtptShaftAngulVelVHSC1 "Transmission Output Shaft Angular Velocity Validity";
+CM_ SG_ 501 TrEPBAppReqHSC1 "Transmission Electric Park Brake Apply Request";
+CM_ SG_ 501 TrEPBAppReqPVHSC1 "Transmission Electric Park Brake Apply Request Protection Value";
+CM_ SG_ 501 TrEstdGearPVHSC1 "Transmission Estimated Gear Position Protection Value";
+CM_ SG_ 501 TrEstdGearV_TCMHSC1 "Transmission Estimated Gear Validity";
+CM_ SG_ 501 TrEstdGear_TCMHSC1 "Transmission Estimated Gear";
+CM_ SG_ 501 TrPrkPosHSC1 "Transmisssion Park Position";
+CM_ SG_ 501 TrPrkPosPVHSC1 "Transmission Park Position Protection Value";
+CM_ SG_ 501 TrPrkSysFHSC1 "Transmisssion Park System Failed";
+CM_ SG_ 501 TrShftLvrPosPVHSC1 "Transmission Shift Lever Position Protection Value";
+CM_ SG_ 501 TrShftLvrPosV_TCMHSC1 "Transmission Shift Lever Position Validity from TCM";
+CM_ SG_ 501 TrShftLvrPos_TCMHSC1 "Transmission Shift Lever Position from TCM";
+CM_ SG_ 501 TrShftPosAlvRCHSC1 "Transmission Shift Position Alive Rolling Count";
+BA_DEF_  "BaudRate" FLOAT 1000 1000000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","spontaneous","cyclicIfActive","spontaneousWithDelay","immediate";
+BA_DEF_ BO_  "GenMsgCycleTime" FLOAT 0 300000;
+BA_DEF_ BO_  "GenMsgDelayTime" FLOAT 0 300000;
+BA_DEF_ SG_  "GenSigStartValue" INT -9.22337203685478E+018 1.84467440737096E+019;
+BA_DEF_ SG_  "GenSigLongName" STRING ;
+BA_DEF_DEF_  "BaudRate" 1000;
+BA_DEF_DEF_  "GenMsgSendType" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigLongName" "";
+BA_ "BaudRate" 500000;
+BA_ "GenMsgSendType" BO_ 1794 1;
+BA_ "GenMsgCycleTime" BO_ 1794 0;
+BA_ "GenMsgSendType" BO_ 1913 4;
+BA_ "GenMsgCycleTime" BO_ 1913 0;
+BA_ "GenMsgSendType" BO_ 1638 0;
+BA_ "GenMsgCycleTime" BO_ 1638 100;
+BA_ "GenMsgDelayTime" BO_ 1638 0;
+BA_ "GenMsgSendType" BO_ 157 0;
+BA_ "GenMsgCycleTime" BO_ 157 10;
+BA_ "GenMsgDelayTime" BO_ 157 0;
+BA_ "GenMsgSendType" BO_ 2015 4;
+BA_ "GenMsgCycleTime" BO_ 2015 0;
+BA_ "GenMsgSendType" BO_ 1905 4;
+BA_ "GenMsgCycleTime" BO_ 1905 0;
+BA_ "GenMsgSendType" BO_ 201 0;
+BA_ "GenMsgCycleTime" BO_ 201 10;
+BA_ "GenMsgDelayTime" BO_ 201 0;
+BA_ "GenMsgSendType" BO_ 404 0;
+BA_ "GenMsgCycleTime" BO_ 404 25;
+BA_ "GenMsgDelayTime" BO_ 404 0;
+BA_ "GenMsgSendType" BO_ 479 0;
+BA_ "GenMsgCycleTime" BO_ 479 25;
+BA_ "GenMsgDelayTime" BO_ 479 0;
+BA_ "GenMsgSendType" BO_ 1130 0;
+BA_ "GenMsgCycleTime" BO_ 1130 50;
+BA_ "GenMsgDelayTime" BO_ 1130 0;
+BA_ "GenMsgSendType" BO_ 498 0;
+BA_ "GenMsgCycleTime" BO_ 498 20;
+BA_ "GenMsgDelayTime" BO_ 498 0;
+BA_ "GenMsgSendType" BO_ 361 0;
+BA_ "GenMsgCycleTime" BO_ 361 20;
+BA_ "GenMsgDelayTime" BO_ 361 0;
+BA_ "GenMsgSendType" BO_ 497 0;
+BA_ "GenMsgCycleTime" BO_ 497 20;
+BA_ "GenMsgDelayTime" BO_ 497 0;
+BA_ "GenMsgSendType" BO_ 241 0;
+BA_ "GenMsgCycleTime" BO_ 241 10;
+BA_ "GenMsgDelayTime" BO_ 241 0;
+BA_ "GenMsgSendType" BO_ 481 0;
+BA_ "GenMsgCycleTime" BO_ 481 30;
+BA_ "GenMsgDelayTime" BO_ 481 0;
+BA_ "GenMsgSendType" BO_ 1344 0;
+BA_ "GenMsgCycleTime" BO_ 1344 1000;
+BA_ "GenMsgDelayTime" BO_ 1344 0;
+BA_ "GenMsgSendType" BO_ 795 0;
+BA_ "GenMsgCycleTime" BO_ 795 100;
+BA_ "GenMsgDelayTime" BO_ 795 0;
+BA_ "GenMsgSendType" BO_ 425 0;
+BA_ "GenMsgCycleTime" BO_ 425 50;
+BA_ "GenMsgDelayTime" BO_ 425 0;
+BA_ "GenMsgSendType" BO_ 1699 1;
+BA_ "GenMsgCycleTime" BO_ 1699 0;
+BA_ "GenMsgSendType" BO_ 1345 0;
+BA_ "GenMsgCycleTime" BO_ 1345 200;
+BA_ "GenMsgDelayTime" BO_ 1345 0;
+BA_ "GenMsgSendType" BO_ 249 0;
+BA_ "GenMsgCycleTime" BO_ 249 10;
+BA_ "GenMsgDelayTime" BO_ 249 0;
+BA_ "GenMsgSendType" BO_ 501 0;
+BA_ "GenMsgCycleTime" BO_ 501 25;
+BA_ "GenMsgDelayTime" BO_ 501 0;
+BA_ "GenSigStartValue" SG_ 1794 DTCInfomationSCUHSC1 0;
+BA_ "GenSigStartValue" SG_ 1913 DiagnosticRespSCU 0;
+BA_ "GenSigStartValue" SG_ 1638 SCUTxCCPHSC1 0;
+BA_ "GenSigStartValue" SG_ 157 SCUDrvngMdSwStsHSC1 0;
+BA_ "GenSigStartValue" SG_ 157 SCUDrvrIntrvnAHSC1 0;
+BA_ "GenSigStartValue" SG_ 157 SCUExtdShifterFlrHSC1 0;
+BA_ "GenSigLongName" SG_ 157 SCUExtdShifterFlrHSC1 "Shifter Control Unit Extended Shifter Failure";
+BA_ "GenSigStartValue" SG_ 157 SCUFltLvlWrnngHSC1 0;
+BA_ "GenSigLongName" SG_ 157 SCUFltLvlWrnngHSC1 "Shifter Control Unit Fault Level Warning";
+BA_ "GenSigStartValue" SG_ 157 SCUNRCDAlvRCHSC1 0;
+BA_ "GenSigStartValue" SG_ 157 SCUNRCDAvlblHSC1 0;
+BA_ "GenSigStartValue" SG_ 157 SCUParkActrStsHSC1 0;
+BA_ "GenSigLongName" SG_ 157 SCUParkActrStsHSC1 "Shifter control unit Park actuator status";
+BA_ "GenSigStartValue" SG_ 157 SCUParkLckReqHSC1 0;
+BA_ "GenSigLongName" SG_ 157 SCUParkLckReqHSC1 "Shift control unit P lock request";
+BA_ "GenSigStartValue" SG_ 157 SCUParkLckReqPVHSC1 0;
+BA_ "GenSigLongName" SG_ 157 SCUParkLckReqPVHSC1 "Shift control unit P lock request Protection Value";
+BA_ "GenSigStartValue" SG_ 157 SCUParkLckReqVHSC1 1;
+BA_ "GenSigLongName" SG_ 157 SCUParkLckReqVHSC1 "Shift control unit P lock request Valid";
+BA_ "GenSigStartValue" SG_ 157 SCURgtnLvlSwStsHSC1 0;
+BA_ "GenSigStartValue" SG_ 157 SCUShifterFlrHSC1 0;
+BA_ "GenSigStartValue" SG_ 157 SCUShifterLvrPosHSC1 0;
+BA_ "GenSigStartValue" SG_ 157 SCUShifterOpngRmndrHSC1 0;
+BA_ "GenSigLongName" SG_ 157 SCUShifterOpngRmndrHSC1 "Shifter Control Unit Shifter Operating Reminder";
+BA_ "GenSigStartValue" SG_ 157 SCUShifterParkActrPosHSC1 0;
+BA_ "GenSigLongName" SG_ 157 SCUShifterParkActrPosHSC1 "Shifter Control Unit Shifter Park Actuator Position";
+BA_ "GenSigStartValue" SG_ 157 SCUShifterPosInvsnHSC1 15;
+BA_ "GenSigStartValue" SG_ 157 SCUShifterPosRCHSC1 0;
+BA_ "GenSigStartValue" SG_ 157 SCUShifterSpvsUnitFlrHSC1 0;
+BA_ "GenSigLongName" SG_ 157 SCUShifterSpvsUnitFlrHSC1 "Shifter Control Unit Shifter Slave Supervisor Unit Failure";
+BA_ "GenSigStartValue" SG_ 157 SCUSOCMdSwStsHSC1 0;
+BA_ "GenSigStartValue" SG_ 2015 DiagnosticFuncAddrReq_h1 0;
+BA_ "GenSigStartValue" SG_ 1905 DiagnosticReqSCU 0;
+BA_ "GenSigStartValue" SG_ 201 En12VoltStrMotCmddOn_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 201 EnRunA_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 201 PtBrkPdlDscrtInptStsV_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 201 PtBrkPdlDscrtInptSts_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 404 TrShftLvrPosV_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 404 TrShftLvrPos_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 479 EnASSSta_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 1130 DrvrDoorOpenStsHSCHSC1 0;
+BA_ "GenSigStartValue" SG_ 1130 VehSideLghtStsHSC1 0;
+BA_ "GenSigStartValue" SG_ 498 SysBPMHSC1 0;
+BA_ "GenSigStartValue" SG_ 498 SysBPMEnbdHSC1 0;
+BA_ "GenSigStartValue" SG_ 361 BCMAvlbly_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 361 FICMAvlbly_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 361 IPCAvlbly_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 361 SCSAvlbly_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 361 SDMAvlbly_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 497 BPMMstrAvlbly_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 497 PwrMdMstrAccryA_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 497 PwrMdMstrRunCrkA_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 497 SysOpnlMd_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 497 SysPwrMdV_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 497 SysPwrMd_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 497 SysVolMdV_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 497 SysVolMd_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 497 SysVolV_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 497 SysVol_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 241 BrkPdlPosV_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 241 ScurtKeyInvdHSC1 1;
+BA_ "GenSigStartValue" SG_ 481 NRCDSCUReqAlvRC_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 481 NRCDShifterPosReqd_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 1344 VehOdoV_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 1344 VehOdo_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 795 VehDrvngMd_h1HSC1 0;
+BA_ "GenSigLongName" SG_ 795 VehDrvngMd_h1HSC1 "Vehicle Driving Mode";
+BA_ "GenSigStartValue" SG_ 425 NRCDSts_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 1699 NRCDMstrChlg_h1HSC1 0;
+BA_ "GenSigStartValue" SG_ 1345 CalendarDayHSC1 0;
+BA_ "GenSigStartValue" SG_ 1345 CalendarMonthHSC1 0;
+BA_ "GenSigStartValue" SG_ 1345 CalendarYearHSC1 0;
+BA_ "GenSigStartValue" SG_ 1345 HourOfDayHSC1 0;
+BA_ "GenSigStartValue" SG_ 1345 MinuteOfHourHSC1 0;
+BA_ "GenSigStartValue" SG_ 1345 SecsOfMinuteHSC1 0;
+BA_ "GenSigStartValue" SG_ 1345 TimeDspFmtHSC1 0;
+BA_ "GenSigStartValue" SG_ 249 TrOtptShaftAngulVelHSC1 0;
+BA_ "GenSigStartValue" SG_ 249 TrOtptShaftAngulVelVHSC1 0;
+BA_ "GenSigStartValue" SG_ 501 TrEPBAppReqHSC1 0;
+BA_ "GenSigLongName" SG_ 501 TrEPBAppReqHSC1 "Transmission Electric Park Brake Apply Request";
+BA_ "GenSigStartValue" SG_ 501 TrEPBAppReqPVHSC1 0;
+BA_ "GenSigLongName" SG_ 501 TrEPBAppReqPVHSC1 "Transmission Electric Park Brake Apply Request Protection Value";
+BA_ "GenSigStartValue" SG_ 501 TrEstdGearPVHSC1 0;
+BA_ "GenSigLongName" SG_ 501 TrEstdGearPVHSC1 "Transmission Estimated Gear Position Protection Value";
+BA_ "GenSigStartValue" SG_ 501 TrEstdGearV_TCMHSC1 0;
+BA_ "GenSigStartValue" SG_ 501 TrEstdGear_TCMHSC1 0;
+BA_ "GenSigStartValue" SG_ 501 TrPrkPosHSC1 0;
+BA_ "GenSigLongName" SG_ 501 TrPrkPosHSC1 "Transmisssion Park Position";
+BA_ "GenSigStartValue" SG_ 501 TrPrkPosPVHSC1 0;
+BA_ "GenSigLongName" SG_ 501 TrPrkPosPVHSC1 "Transmission Park Position Protection Value";
+BA_ "GenSigStartValue" SG_ 501 TrPrkSysFHSC1 0;
+BA_ "GenSigLongName" SG_ 501 TrPrkSysFHSC1 "Transmisssion Park System Failed";
+BA_ "GenSigStartValue" SG_ 501 TrShftLvrPosPVHSC1 0;
+BA_ "GenSigLongName" SG_ 501 TrShftLvrPosPVHSC1 "Transmission Shift Lever Position Protection Value";
+BA_ "GenSigStartValue" SG_ 501 TrShftLvrPosV_TCMHSC1 0;
+BA_ "GenSigStartValue" SG_ 501 TrShftLvrPos_TCMHSC1 0;
+BA_ "GenSigStartValue" SG_ 501 TrShftPosAlvRCHSC1 0;
+BA_ "GenSigLongName" SG_ 501 TrShftPosAlvRCHSC1 "Transmission Shift Position Alive Rolling Count";
+VAL_ 157 SCUDrvngMdSwStsHSC1 3 "Illegal Active" 2 "Tap Down" 1 "Tap Up" 0 "No Active" ;
+VAL_ 157 SCUDrvrIntrvnAHSC1 1 "Active" 0 "Inactive" ;
+VAL_ 157 SCUExtdShifterFlrHSC1 13 "Motor fail" 12 "Motor Stuck" 11 "All SENT sensor fail" 10 "Single SENT sensor fail" 9 "All unlock button fail" 8 "Single Unlock button fail" 7 "SSU fail" 6 "All P button sensor fail" 5 "All rotary hall sensor fail" 4 "Single P button sensor fail" 3 "CAN Bus communication fail" 2 "Single rotary hall sensor fail" 1 "Mode selector sensor fail" 0 "No fail" ;
+VAL_ 157 SCUFltLvlWrnngHSC1 3 "Transmission Wrong Gear feedback" 2 "SCU Critical Fault" 1 "SCU Limited Fault" 0 "No Fault" ;
+VAL_ 157 SCUNRCDAlvRCHSC1 0 "count value (0x0 - 0xF)" ;
+VAL_ 157 SCUNRCDAvlblHSC1 1 "Available " 0 "Unavailable " ;
+VAL_ 157 SCUParkActrStsHSC1 3 "All actuator sensors fault [safety red warning]" 2 "Single actuator sensor fault [safety yellow warning]" 1 "Actuator Fault" 0 "No Fault" ;
+VAL_ 157 SCUParkLckReqHSC1 3 "24 Reserved" 2 "12 Apply brake request" 1 "24 Release brake request" 0 "12 No Request" ;
+VAL_ 157 SCUParkLckReqPVHSC1 0 " (0x0 - 0xF)" ;
+VAL_ 157 SCUParkLckReqVHSC1 1 "Invalid" 0 "Valid" ;
+VAL_ 157 SCURgtnLvlSwStsHSC1 3 "Illegal Active" 2 "Tap Down" 1 "Tap Up" 0 "No Active" ;
+VAL_ 157 SCUShifterFlrHSC1 7 "SSU fail [safety red warning]" 6 "all P button sensors fail [safety red warning]" 5 "all rotary position sensor fail [safety red warning]" 4 "single P button sensors fail  [safety yellow warning]" 3 "CAN Bus communcation fail" 2 "single rotary position sensor fail  [safety yellow warning]" 1 "mode selector sensor fail" 0 "no fault" ;
+VAL_ 157 SCUShifterLvrPosHSC1 10 "Error" 9 "Reserved" 8 "P (Park)" 7 "R (Reverse)" 6 "N (Neutral)" 5 "D (Drive)" 3 "M(Manual mode)" 2 "W(Winter mode)" 1 "S(Sport mode)" 0 "SCU initialization" ;
+VAL_ 157 SCUShifterOpngRmndrHSC1 6 "Security condition not met" 5 "Speed Too High,Go Into R not allowed" 4 "Speed Too High,Go Into P not allowed" 3 "Please Press The  Unlock Button And Slam On The  Brake Pedal" 2 "Please Slam On The  Brake Pedal" 1 "Please Press The Unlock Button" 0 "No Reminder Request" ;
+VAL_ 157 SCUShifterParkActrPosHSC1 4 "POSITION_DETECTED_RELEASE" 3 "POSITION_DETECTED_TRANSITION" 2 "POSITION_DETECTED_OUT_OF_BOUNDS" 1 "POSITION_DETECTED_NO_PARK" 0 "POSITION_DETECTED_PARK" ;
+VAL_ 157 SCUShifterPosInvsnHSC1 15 "SCU initialization" 14 "S(Sport mode)" 13 "W(Winter mode)" 12 "M(Manual mode)" 11 "Reserved" 10 "D (Drive)" 9 "N (Neutral)" 8 "R (Reverse)" 7 "P(Park)" 6 "In Learn Process" 5 "Error" ;
+VAL_ 157 SCUShifterPosRCHSC1 0 " (0x0 - 0xF)" ;
+VAL_ 157 SCUShifterSpvsUnitFlrHSC1 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "SSU reset occurred" 2 "SSU fail safe mode" 1 "SSU not present" 0 "SSU OK" ;
+VAL_ 157 SCUSOCMdSwStsHSC1 3 "Illegal Active" 2 "Tap Down" 1 "Tap Up" 0 "No Active" ;
+VAL_ 201 En12VoltStrMotCmddOn_h1HSC1 1 "True" 0 "False" ;
+VAL_ 201 EnRunA_h1HSC1 1 "True" 0 "False" ;
+VAL_ 201 PtBrkPdlDscrtInptStsV_h1HSC1 1 "Invalid" 0 "Valid" ;
+VAL_ 201 PtBrkPdlDscrtInptSts_h1HSC1 1 "Brake Applied" 0 "Brake Not Applied" ;
+VAL_ 404 TrShftLvrPosV_h1HSC1 1 "Invalid" 0 "Valid" ;
+VAL_ 404 TrShftLvrPos_h1HSC1 15 "Lever Position Unknown" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Forward Range H" 10 "Forward Range G" 9 "Forward Range F" 8 "Forward Range E" 7 "Forward Range D" 6 "Forward Range C" 5 "Forward Range B" 4 "Forward Range A" 3 "Neutral Range" 2 "Reverse Range" 1 "Park Range" 0 "Between Ranges" ;
+VAL_ 479 EnASSSta_h1HSC1 3 "Engine Stopping" 2 "Engine Starting" 1 "Engine Running" 0 "Engine Off" ;
+VAL_ 1130 DrvrDoorOpenStsHSCHSC1 3 "Driver Door Full Open" 2 "Driver Door Ajar" 1 "Driver Door Open(For latch switch can't detect door ajar status)" 0 "Driver Door Closed" ;
+VAL_ 1130 VehSideLghtStsHSC1 3 "All side light and license plate light on" 2 "Right side light on only" 1 "Left side light on only" 0 "No side light on " ;
+VAL_ 498 SysBPMHSC1 3 "Crank Request" 2 "Run" 1 "ACC" 0 "Off" ;
+VAL_ 498 SysBPMEnbdHSC1 1 "True" 0 "False" ;
+VAL_ 361 BCMAvlbly_h1HSC1 1 "Available " 0 "Unavailable " ;
+VAL_ 361 FICMAvlbly_h1HSC1 1 "Available " 0 "Unavailable " ;
+VAL_ 361 IPCAvlbly_h1HSC1 1 "Available " 0 "Unavailable " ;
+VAL_ 361 SCSAvlbly_h1HSC1 1 "Available " 0 "Unavailable " ;
+VAL_ 361 SDMAvlbly_h1HSC1 1 "Available " 0 "Unavailable " ;
+VAL_ 497 BPMMstrAvlbly_h1HSC1 1 "True" 0 "False" ;
+VAL_ 497 PwrMdMstrAccryA_h1HSC1 1 "Active" 0 "Inactive" ;
+VAL_ 497 PwrMdMstrRunCrkA_h1HSC1 1 "Active" 0 "Inactive" ;
+VAL_ 497 SysOpnlMd_h1HSC1 5 "Diagnosic or Reprogramming(Reserve)" 4 "Storage Mode" 3 "Show Room" 2 "Transit Mode" 1 "Manufacturing Mode" 0 "Normal Mode" ;
+VAL_ 497 SysPwrMdV_h1HSC1 1 "Invalid" 0 "Valid" ;
+VAL_ 497 SysPwrMd_h1HSC1 3 "Crank Request" 2 "Run" 1 "ACC" 0 "Off" ;
+VAL_ 497 SysVolMdV_h1HSC1 1 "Invalid" 0 "Valid" ;
+VAL_ 497 SysVolMd_h1HSC1 3 "Illegal System  Voltage" 2 "High System Voltage" 1 "Low System Voltage" 0 "Normal" ;
+VAL_ 497 SysVolV_h1HSC1 1 "Invalid" 0 "Valid" ;
+VAL_ 497 SysVol_h1HSC1 0 "V (0x0 - 0xFF)" ;
+VAL_ 241 BrkPdlPosV_h1HSC1 1 "Invalid" 0 "Valid" ;
+VAL_ 241 ScurtKeyInvdHSC1 1 "True" 0 "False" ;
+VAL_ 481 NRCDSCUReqAlvRC_h1HSC1 0 "count value (0x0 - 0xF)" ;
+VAL_ 481 NRCDShifterPosReqd_h1HSC1 10 "Error" 9 "Reserved" 8 "P (Park)" 7 "R (Reverse)" 6 "N (Neutral)" 5 "D (Drive)" 3 "M(Manual mode)" 2 "W(Winter mode)" 1 "S(Sport mode)" 0 "SCU initialization" ;
+VAL_ 1344 VehOdoV_h1HSC1 1 "Invalid" 0 "Valid" ;
+VAL_ 1344 VehOdo_h1HSC1 0 " (0x0 - 0xFFFFFF)" ;
+VAL_ 795 VehDrvngMd_h1HSC1 7 "Customization Mode" 6 "Reserved" 5 "Super Sport" 4 "Sport" 3 "Normal" 2 "ECO" 1 "Super ECO" 0 "No Driving Mode" ;
+VAL_ 425 NRCDSts_h1HSC1 3 "Fully-APA Active" 2 "Semiautomatic Parking Assistant Active" 1 "NRCD Active" 0 "Inactive" ;
+VAL_ 1345 CalendarDayHSC1 0 "days (0x0 - 0x1F)" ;
+VAL_ 1345 CalendarMonthHSC1 12 "December" 11 "November" 10 "October" 9 "September" 8 "August" 7 "July" 6 "June" 5 "May" 4 "April" 3 "March" 2 "February" 1 "January" 0 "Unknown" ;
+VAL_ 1345 CalendarYearHSC1 0 "year (0x0 - 0xFF)" ;
+VAL_ 1345 HourOfDayHSC1 0 "E=N*1 (0x0 - 0x17)" ;
+VAL_ 1345 MinuteOfHourHSC1 0 " (0x0 - 0x3B)" ;
+VAL_ 1345 SecsOfMinuteHSC1 0 " (0x0 - 0x3B)" ;
+VAL_ 1345 TimeDspFmtHSC1 1 "24 hour mode" 0 "12 hour mode" ;
+VAL_ 249 TrOtptShaftAngulVelHSC1 0 "rpm (0x0 - 0xFFFF)" ;
+VAL_ 249 TrOtptShaftAngulVelVHSC1 1 "Invalid" 0 "Valid" ;
+VAL_ 501 TrEPBAppReqHSC1 1 "True" 0 "False" ;
+VAL_ 501 TrEPBAppReqPVHSC1 0 " (0x0 - 0xF)" ;
+VAL_ 501 TrEstdGearPVHSC1 0 " (0x0 - 0xF)" ;
+VAL_ 501 TrEstdGearV_TCMHSC1 1 "Invalid" 0 "Valid" ;
+VAL_ 501 TrEstdGear_TCMHSC1 15 "Park Gear" 14 "Reverse Gear" 13 "Neutral Gear" 12 "reserved" 11 "reserved" 10 "reserved" 8 "Eighth Gear" 7 "Seventh Gear" 6 "Sixth Gear" 5 "Fifth Gear" 4 "Fourth Gear" 3 "Third Gear" 2 "Second Gear" 1 "First Gear" 0 "Not Supported" ;
+VAL_ 501 TrPrkPosHSC1 3 "Unknown" 2 "Working in Progress" 1 "Park Position" 0 "Non Park Position" ;
+VAL_ 501 TrPrkPosPVHSC1 0 " (0x0 - 0xF)" ;
+VAL_ 501 TrPrkSysFHSC1 1 "True" 0 "False" ;
+VAL_ 501 TrShftLvrPosPVHSC1 0 " (0x0 - 0xF)" ;
+VAL_ 501 TrShftLvrPosV_TCMHSC1 1 "Invalid" 0 "Valid" ;
+VAL_ 501 TrShftLvrPos_TCMHSC1 15 "Lever Position Unknown" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Forward Range H" 10 "Forward Range G" 9 "Forward Range F" 8 "Forward Range E" 7 "Forward Range D" 6 "Forward Range C" 5 "Forward Range B" 4 "Forward Range A" 3 "Neutral Range" 2 "Reverse Range" 1 "Park Range" 0 "Between Ranges" ;
+VAL_ 501 TrShftPosAlvRCHSC1 0 "count value (0x0 - 0xF)" ;
+
