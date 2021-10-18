@@ -65,7 +65,10 @@ def Signal_Process(sig,dir):
             temp2 = temp1 + "   published;\r\n"
 
         size = int(sig[4+i][2]) 
-        if size < 32:  #less than 4bytes 
+        if size == 1:
+            temp3 = temp2 + "   type boolean;\r\n"
+            temp4 = temp3 + "   size 1 bits;\r\n}\r\n"
+        elif size < 32:  #less than 4bytes 
             temp3 = temp2 + "   type unsigned;\r\n"
             temp4 = temp3 + "   size " + sig[4+i][2] + " bits;\r\n}\r\n"
         elif size == 56 or size == 64:
