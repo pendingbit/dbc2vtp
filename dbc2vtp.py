@@ -26,7 +26,7 @@ def ReadFile():
 
     NodesPattern = re.compile(r"BU_: (.*)", re.S)
     MessagePattern = re.compile(r"BO_ (.*?) (.*?): (.*?) (.*)", re.S)
-    SignalPattern = re.compile(r'''SG_ (.*?) : (.*?)\|(.*?)@.*? \((.*?),(.*?)\) \[(.*?)\|(.*?)\] "(.*?)" (.*)''', re.S)
+    SignalPattern = re.compile(r'''SG_ (.*?) : (.*?)\|(.*?)@(.*?) \((.*?),(.*?)\) \[(.*?)\|(.*?)\] "(.*?)" (.*)''', re.S)
     line = dbc_fd.readline()
     allDatas=[]
     while line:
@@ -90,7 +90,7 @@ if __name__ == '__main__':
     ReadFile()
     SelectMasterNode()
     ConfigName()
-    print(allDatas[0])
+    #print(allDatas[0])
     Fix_Generate(allDatas, masternode, commonName)
     Net_Generate(allDatas, masternode, commonName)
     exit(0)
