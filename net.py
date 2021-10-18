@@ -1,3 +1,6 @@
+from typing import no_type_check
+
+
 globalstring = ''
 
 net_header = '''
@@ -33,30 +36,84 @@ def Frame_Process(fra,dir):
         globalstring += "       received;\r\n"
     else:
         globalstring += "       todo;\r\n" 
-    globalstring += "       frame size " + fra[3] +" bytes;\r\n"
-       
-    #for i in range(len(fra) - 4):
-        #print(i)
-        
 
+    globalstring += "       frame size " + fra[3] +" bytes;\r\n"
+    dlc = int(fra[3])
+    if dlc == 8:
+        globalstring += "       dlc_check_mode strict;\r\n"
+    else:
+        globalstring += "       dlc_check_mode permissive;\r\n"
+
+    if fra[4][3] == '0+':
+        globalstring += "       endianness big;\r\n"
+    else:
+        globalstring += "       endianness small;\r\n"
+
+    for i in range(len(fra) - 4):
+        globalstring += "       signal " + fra[i+4][0] + "_PTCAN {\r\n" 
+        size = int(fra[4+i][2]) 
+        if size == 1:
+            globalstring += "           type boolean;\r\n"
+            globalstring += "           size 1 bits;\r\n"
+        elif size < 32:  #less than 4bytes 
+            globalstring += "           type unsigned;\r\n"
+            globalstring += "           size " + fra[4+i][2] + " bits;\r\n"
+        elif size == 56 or size == 64:
+            globalstring += "           type bytes;\r\n"
+            globalstring += "           size " + fra[4+i][2] + " bytes;\r\n"
+        else:
+            print("Not recognized!!! Plese Check Signal" + fra[4+i][0])
+            exit(0)
+
+        offset = int(fra[4+i][1]) 
+        temp1 = offset // 8
+        temp2 = offset % 8
+        temp3 = (dlc -1 -temp1)*8 + temp2 - size + 1
+        globalstring += "           offset " + str(int(temp3)) + " bits; \r\n       }\r\n"
+
+    globalstring += "}\r\n"   
 
     return
 
+def Sig_map(fra,dir):
+    global globalstring
+    globalstring = ''
+    
+    for i in range(len(fra) - 4):
+        if dir == 0:
+            globalstring += "   map signal from application " + fra[i+4][0] + " to " + fra[i+4][0] + "_PTCAN;\r\n"
+        else:
+            globalstring += "   map signal from " + fra[i+4][0] + "_PTCAN to " + fra[i+4][0] + ";\r\n"
 
+    return
 
 
 def Net_Generate(dbc,masternode,filename):
     outfile = open(filename+".net", "w+")
     outfile.writelines(net_header)
 
+    #frame define
     for i in range(len(dbc)):
         if dbc[i][0] == masternode:
             Frame_Process(dbc[i], 0)
         else:
             Frame_Process(dbc[i], 1)
         outfile.writelines(globalstring)
+    
+    #interface define
+
+
+    #signal map define
+    for i in range(len(dbc)):
+        if dbc[i][0] == masternode:
+            Sig_map(dbc[i], 0)
+        else:
+            Sig_map(dbc[i], 1)
+        outfile.writelines(globalstring)
 
     outfile.flush()
     outfile.close()
 
     return
+
+
