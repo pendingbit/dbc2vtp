@@ -1,4 +1,4 @@
-The dbc2vtp tool is used to get .fix .net frame.h signal.h for VTP module.
+The dbc2vtp tool is used to get .fix .net .pri frame.h signal.h for VTP module.
 This tool will generate xxx.fix and xxx.net config file according to input can DBC.
 Compile the VTP hello project with .fix .net .pri and .tgt you will get the source code (API) to run VTP module.
 If you get any question please contact to me.
