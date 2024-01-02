@@ -7,6 +7,8 @@ import re
 import openpyxl
 from fix import CreateFix
 from net import CreateNet
+from pri import CreatePri
+from header import CreateH
 
 
 def decode(dbc):
@@ -93,6 +95,8 @@ if __name__ == '__main__':
     
     CreateFix(dbc_data,m_node)
     CreateNet(dbc_data,m_node)
+    CreatePri(dbc_data,m_node)
+    CreateH(dbc_data,m_node)
 
     exit()
 
